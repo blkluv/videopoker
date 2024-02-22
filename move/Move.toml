@@ -1,0 +1,12 @@
+[package]
+name = "VideoPoker"
+version = "1.0.0"
+authors = []
+
+[addresses]
+package_owner = "0x0136ff5bce047c7ffbee45f7ba1ff7ea7b36f1c4df1d94216741b6f0f03e227b"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "randomnet"
+subdir = "aptos-move/framework/aptos-framework"

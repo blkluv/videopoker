@@ -1,4 +1,4 @@
-@import "./base";
+@import "base";
 
 .play-component {
 
@@ -42,4 +42,11 @@
 
 	}
 
+}
+
+.faucet-component {
+	.amount, .error-component {
+		font-weight: bold;
+		font-size: 18px;
+	}
 }

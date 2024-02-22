@@ -1,26 +1,17 @@
-@import "./base";
+@import "base";
 
 .cards-component {
-
 	width: 100%;
 	display: flex;
 
 	.card {
-
 		position: relative;
 		width: 100%;
 		font-size: 2.5rem;
 		letter-spacing: 0;
 		user-select: none;
 
-		input {
-			opacity: 0;
-			width: 0;
-			height: 0;
-			display: none;
-		}
-
-		input + label {
+		& > * {
 			position: relative;
 			display: flex;
 			align-items: center;
@@ -74,7 +65,7 @@
 			}
 		}
 
-		input:not(:disabled):checked + label {
+		&.selected > * {
 			transform: translateY(-1.5rem);
 
 			&::after {
@@ -91,7 +82,7 @@
 			}
 		}
 
-		&.flipped label {
+		&.flipped > * {
 			background: #fafafa;
 			.value, .suit {
 				opacity: 0;

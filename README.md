@@ -1,7 +1,7 @@
 videopoker-dapp
 ===============
 
-A Videopoker implementation in Solidity+React using Harmony/Chainlink VRF
+A Videopoker implementation on Aptos using on-chain randomness
 
 - [Play on Harmony](https://videopoker.krpt.cc/#play/harmony)
 - [Play on Harmony Testnet](https://videopoker.krpt.cc/#play/harmony-testnet)
