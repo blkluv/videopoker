@@ -8,8 +8,8 @@ export default function Footer() {
 				<Link href="/">Play</Link>
 				<Link href="/payouts">Payouts</Link>
 				<Link href="/faucet">Faucet</Link>
-				{/*<a href="https://github.com/Kripth/aptos-videopoker/blob/master/README.md" target="_blank" rel="noreferrer">About</a>
-				<a href="https://github.com/Kripth/aptos-videopoker" target="_blank" rel="noreferrer">GitHub</a>*/}
+				<a href="https://github.com/Kripth/aptos-videopoker/blob/master/README.md" target="_blank" rel="noreferrer">About</a>
+				<a href="https://github.com/Kripth/aptos-videopoker" target="_blank" rel="noreferrer">GitHub</a>
 			</div>
 		</div>
 		<div className="suits">
