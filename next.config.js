@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
-module.exports ={
+module.exports = {
 	reactStrictMode: false,
-	webpack5: true,
 	experimental: {
-		scrollRestoration: true,
+		scrollRestoration: true, // ✅ Keep experimental features if needed
 	}
 };
