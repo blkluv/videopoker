@@ -2,9 +2,10 @@ import { useWallet } from "@aptos-labs/wallet-adapter-react";
 import Modal from "./Modal";
 import { useAptosContext } from "../contexts/aptos";
 import { Wallet } from "@aptos-labs/wallet-adapter-core";
+import { SupportedWallet } from "@aptos-labs/wallet-adapter-react"; // Hypothetical example
 
 export default function WalletButton() {
-	const { wallets = [] } = useWallet(); // Ensure wallets has a default empty array
+	const { wallets = [] } = useWallet();
 	const { address, connect, connectImpl, connecting, setConnecting, disconnect } = useAptosContext();
 
 	return (
@@ -56,7 +57,7 @@ export default function WalletButton() {
 	);
 }
 
-function WalletContent({ wallet }: { wallet: Wallet<string> | AptosStandardSupportedWallet<string> }) {
+function WalletContent({ wallet }: { wallet: Wallet<string> | SupportedWallet<string> }) {
 	return (
 		<>
 			<div className="icon">
@@ -66,4 +67,3 @@ function WalletContent({ wallet }: { wallet: Wallet<string> | AptosStandardSuppo
 		</>
 	);
 }
-
