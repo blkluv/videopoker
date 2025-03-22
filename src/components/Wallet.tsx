@@ -56,13 +56,14 @@ export default function WalletButton() {
 	);
 }
 
-function WalletContent({ wallet }: { wallet: Wallet }) {
+function WalletContent({ wallet }: { wallet: Wallet<string> | AptosStandardSupportedWallet<string> }) {
 	return (
 		<>
 			<div className="icon">
-				<img src={`/images/wallet/${wallet.name}.svg`} alt={`${wallet.name} logo`} />
+				<img src={`/images/wallet/${wallet.name}.svg`} alt={wallet.name} />
 			</div>
 			<div className="name">{wallet.name}</div>
 		</>
 	);
 }
+
